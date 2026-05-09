@@ -1,0 +1,33 @@
+name: Auto Update Hanta Tracker
+
+on:
+  schedule:
+    # This runs the script every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows you to run it manually with one click
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Update Script
+        run: python update_stats.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'Hanta-Tracker-Bot'
+          git config --global user.email 'bot@everythingtoday.in'
+          git add data.json
+          git commit -m "Automated Data Update: $(date)"
+          git push
