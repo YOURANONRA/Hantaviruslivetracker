@@ -1,0 +1,28 @@
+{
+  "lastUpdated": "May 9, 2026 - 22:45 IST",
+  "confirmedCases": 6,
+  "probableCases": 2,
+  "totalDeaths": 3,
+  "strain": "Andes Virus (ANDV)",
+  "vessel": "MV Hondius",
+  "status": "Red Alert: International Contact Tracing Active",
+  "affectedCountries": [
+    "Netherlands",
+    "South Africa",
+    "Switzerland",
+    "Spain",
+    "United Kingdom",
+    "USA",
+    "Germany",
+    "Canada",
+    "Singapore",
+    "New Zealand",
+    "Turkey",
+    "France"
+  ],
+  "sources": [
+    "World Health Organization (WHO)",
+    "Centers for Disease Control (CDC)",
+    "ECDC Outbreak News"
+  ]
+}
