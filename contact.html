@@ -3,25 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | everythingtoday.in</title>
+    <title>Contact | Hanta Virus Tracker | everythingtoday.in</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #02040a; color: #cbd5e1; }
+        input, textarea { background: rgba(15, 23, 42, 0.6) !important; border: 1px solid #1e293b !important; color: white !important; }
+        input:focus, textarea:focus { border-color: #dc2626 !important; outline: none !important; }
+    </style>
 </head>
-<body class="bg-[#02040a] text-slate-300 font-sans p-6 md:p-20">
-    <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-4xl font-black text-white mb-4 italic uppercase">Contact Our Team</h1>
-        <p class="text-slate-500 mb-12">For data corrections, media inquiries, or technical issues regarding the tracker.</p>
-        
-        <div class="bg-slate-900/60 p-12 rounded-[3rem] border border-slate-800 inline-block w-full max-w-xl">
-            <span class="text-red-600 font-black text-[10px] uppercase tracking-[0.4em] block mb-4">Official Channel</span>
-            <h3 class="text-white text-2xl font-bold mb-4">Email Inquiry</h3>
-            <a href="mailto:admin@everythingtoday.in" class="text-white text-xl md:text-3xl font-black italic underline decoration-red-600 transition hover:text-red-500">
-                admin@everythingtoday.in
-            </a>
-            <p class="mt-8 text-xs text-slate-500">Our surveillance unit monitors this inbox 24/7. Please allow up to 4 hours for a response during active outbreak updates.</p>
+<body class="p-6 md:p-20">
+    <div class="max-w-xl mx-auto">
+        <div class="mb-12 border-l-4 border-red-600 pl-6">
+            <h1 class="text-4xl font-black text-white italic tracking-tighter uppercase">Inquiry Portal</h1>
+            <p class="text-slate-500 text-xs mt-2 uppercase tracking-widest font-bold">Secure Communication Channel</p>
         </div>
 
-        <div class="mt-16">
-            <a href="index.html" class="font-bold text-slate-600 hover:text-white uppercase tracking-widest text-xs transition">← Return to Dashboard</a>
+        <form action="#" method="POST" class="space-y-6">
+            <div>
+                <label class="block text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Subject Reference</label>
+                <select class="w-full p-4 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm">
+                    <option>Data Correction</option>
+                    <option>Media Inquiry</option>
+                    <option>Technical Issue</option>
+                    <option>General Support</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Return Address (Optional)</label>
+                <input type="email" placeholder="email@example.com" class="w-full p-4 rounded-xl text-sm">
+            </div>
+
+            <div>
+                <label class="block text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Message Description</label>
+                <textarea rows="6" placeholder="Provide detailed information..." class="w-full p-4 rounded-xl text-sm"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-black py-4 rounded-xl text-xs uppercase tracking-[0.3em] shadow-lg shadow-red-600/20 transition-all">
+                Transmit Message
+            </button>
+        </form>
+
+        <div class="mt-12 text-center">
+            <a href="index.html" class="text-[10px] font-bold text-slate-600 hover:text-white uppercase tracking-widest transition">
+                ← Return to Dashboard
+            </a>
         </div>
     </div>
 </body>
