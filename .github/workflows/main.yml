@@ -2,21 +2,26 @@ name: Auto Update Hanta Tracker
 
 on:
   schedule:
-    # This runs the script every 6 hours
     - cron: '0 */6 * * *'
-  workflow_dispatch: # Allows you to run it manually with one click
+  workflow_dispatch: 
+
+# This explicitly tells GitHub the robot has permission to write changes
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Updated to v4 (Node 24 Compatible)
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
+      # Updated to v5 (Node 24 Compatible)
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.11' 
 
       - name: Install Dependencies
         run: pip install requests
@@ -29,5 +34,5 @@ jobs:
           git config --global user.name 'Hanta-Tracker-Bot'
           git config --global user.email 'bot@everythingtoday.in'
           git add data.json
-          git commit -m "Automated Data Update: $(date)"
+          git commit -m "Automated Data Update: $(date)" || echo "No changes to commit"
           git push
