@@ -1,37 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://everythingtoday.in/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <loc>https://youranonra.github.io/Hantaviruslivetracker/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>hourly</changefreq>
     <priority>1.0</priority>
-    <changefreq>daily</changefreq>
   </url>
 
   <url>
-    <loc>https://everythingtoday.in/about.html</loc>
-    <lastmod>2026-05-09</lastmod>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
+    <loc>https://youranonra.github.io/Hantaviruslivetracker/#about-section</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://everythingtoday.in/contact.html</loc>
-    <lastmod>2026-05-09</lastmod>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
+    <loc>https://youranonra.github.io/Hantaviruslivetracker/#privacy-section</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://everythingtoday.in/privacy.html</loc>
-    <lastmod>2026-05-09</lastmod>
-    <priority>0.4</priority>
-    <changefreq>monthly</changefreq>
+    <loc>https://youranonra.github.io/Hantaviruslivetracker/#disclaimer-section</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://everythingtoday.in/disclaimer.html</loc>
-    <lastmod>2026-05-09</lastmod>
-    <priority>0.4</priority>
-    <changefreq>monthly</changefreq>
+    <loc>https://youranonra.github.io/Hantaviruslivetracker/#contact-section</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
