@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Direct link to your sitemap
-Sitemap: https://everythingtoday.in/sitemap.xml
+Sitemap: https://youranonra.github.io/Hantaviruslivetracker/sitemap.xml
